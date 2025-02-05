@@ -1,0 +1,22 @@
+body {
+    background: rgb(11,25,44);
+    background: radial-gradient(circle, rgba(11,25,44,1) 0%, rgba(17,33,51,1) 50%, rgba(30,62,98,1) 100%);
+}
+
+nav {
+    background: rgb(11,25,44);
+    background: linear-gradient(90deg, rgba(11,25,44,1) 20%, rgba(30,62,98,1) 50%, rgba(11,25,44,1) 80%);
+}
+
+/* Animasi awal sebelum muncul */
+.fade-slide {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Saat elemen masuk ke dalam layar */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

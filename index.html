@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- carosel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Herr Von Muellerhoff' rel='stylesheet'>
+    <title>Landing Page</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="menu" class="relative flex justify-between items-center px-6 py-4 mt-6 w-fit mx-auto bg-gray-900 text-white rounded-full shadow-lg z-50">
+        <h4 class="font-bold text-xl mr-40">
+            <span class="text-white">Land</span><span class="text-yellow-400">Page</span>
+        </h4>
+        
+        <div class="hidden sm:flex sm:items-center sm:space-x-6 font-sans font-semibold">
+            <a href="#" class="hover:text-yellow-400">Home</a>
+            <a href="#" class="hover:text-yellow-400">About</a>
+            <a href="#" class="hover:text-yellow-400">Gallery</a>
+            <a href="#" class="hover:text-yellow-400">Contact</a>
+        </div>
+    
+        <!-- Menu HP -->
+        <button id="menuBtn" class="block sm:hidden focus:outline-none ml-4" aria-expanded="false">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M4 5h16M4 12h16M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    
+        <div id="mobileMenu" class="absolute top-20 left-1/2 transform -translate-x-1/2 w-[90%] max-w-sm bg-gray-900 text-white shadow-lg rounded-xl py-4 transition-all duration-300 opacity-0 scale-95 hidden z-50">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 rounded-md w-full text-center">Home</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 rounded-md w-full text-center">About</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 rounded-md w-full text-center">Gallery</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 rounded-md w-full text-center">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- CONTENT -->
+    <div class="flex flex-col md:flex-row w-full pt-6">
+        <div id="textSection" class="w-full md:w-1/2 p-6 flex flex-col justify-center items-start text-left text-white opacity-0 transform -translate-x-10 transition-all duration-1000">
+            <h1 class="font-bold font-sans text-6xl">Kesegaran dalam Setiap Tetesan!</h1>
+            <br>
+            <p>Selamat datang di <span class="font-bold">Land</span><span class="text-yellow-400 font-bold">Page</span>, tempat di mana kesegaran bertemu dengan cita rasa sempurna! Kami menghadirkan minuman segar berkualitas tinggi yang diracik dari bahan-bahan alami, memberikan sensasi yang menyegarkan dan menyehatkan di setiap tegukan.</p>
+            <br>
+            <button class="bg-yellow-400 text-black p-1 rounded-full mt-2 font-semibold pr-3 pl-3">Learn More</button>
+        </div>
+    
+        <div id="imageSection" class="w-full md:w-1/2 bg-cover bg-center p-6 text-white flex justify-center items-center opacity-0 transform translate-x-10 transition-all duration-1000">
+            <img class="w-4/5" src="asset/teh.png" alt="">
+        </div>
+    </div>
+    
+    <section class="relative w-full bg-cover bg-center py-16 px-6">    
+        <div class="relative pt-10 pb-10 rounded-3xl text-white text-center mx-auto max-w-5xl shadow-lg overflow-hidden" style="background-image: url('asset/bg3.png');">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-10">
+                <div class="p-6 rounded-lg flex flex-col items-center text-center fade-slide">
+                    <img src="asset/2.png" alt="Icon 1" class="w-16 h-16 mb-4">
+                    <h3 class="text-xl font-semibold">Kualitas Premium</h3>
+                    <p class="text-sm mt-2">Kami menghadirkan bahan berkualitas tinggi untuk kepuasan terbaik.</p>
+                </div>
+    
+                <div class="p-6 rounded-lg flex flex-col items-center text-center fade-slide">
+                    <img src="asset/3.png" alt="Icon 2" class="w-16 h-16 mb-4">
+                    <h3 class="text-xl font-semibold">Bahan Alami</h3>
+                    <p class="text-sm mt-2">Produk kami dibuat dari bahan-bahan alami yang sehat dan aman.</p>
+                </div>
+    
+                <div class="p-6 rounded-lg flex flex-col items-center text-center fade-slide">
+                    <img src="asset/4.png" alt="Icon 3" class="w-16 h-16 mb-4">
+                    <h3 class="text-xl font-semibold">Rasa yang Unik</h3>
+                    <p class="text-sm mt-2">Nikmati sensasi rasa yang unik dan menyegarkan setiap hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-white pt-8 pb-8 fade-slide">
+        <h1 class="text-center text-4xl" style="font-family: 'Bakbak One';">ABOUT US</h1>
+        <p class="text-center font-sans text-2xl" style="font-family: 'Didact Gothic';">Sedikit tentang kami dan sejarah singkat awal mula kami.</p>
+        <hr class="w-28 mx-auto mt-2  border-t-4 border-yellow-400 rounded-full fade-slide">
+
+        <div class="flex flex-col md:flex-row gap-8 px-4 md:px-10 items-center pt-6">
+            <div class="w-full md:w-4/10 flex justify-center">
+                <img src="asset/teh2.png" alt="Icon 1">
+            </div>
+    
+            <div class="w-full md:w-7/10 text-left">
+                <p class="text-base md:text-lg" style="font-family: 'Didact Gothic'">
+                    Semua berawal dari satu ide sederhana: bagaimana jika minuman tidak hanya sekadar pelepas dahaga, tetapi juga menghadirkan pengalaman rasa yang luar biasa? Dengan semangat inovasi dan kecintaan pada kesegaran alami, <b><span>Land</span><span class="text-yellow-400">Page</span></b> lahir untuk membawa perubahan dalam dunia minuman segar.
+                    <br><br>
+                    Didirikan pada 2025, kami memulai perjalanan dari dapur kecil dengan satu tujuan besar—menciptakan minuman yang tidak hanya lezat, tetapi juga sehat dan penuh manfaat. Berawal dari komunitas lokal, kini kami telah berkembang, menghadirkan beragam pilihan rasa yang dibuat dari bahan-bahan alami berkualitas tinggi.
+                    <br><br>
+                    Hari ini, <b><span>Land</span><span class="text-yellow-400">Page</span></b> bukan sekadar minuman, tetapi bagian dari gaya hidup sehat dan modern. Kami terus berinovasi untuk menghadirkan kesegaran yang bisa dinikmati kapan saja dan di mana saja.
+                </p>
+                <h1 class="text-4xl pt-4 text-end" style="font-family: 'Herr Von Muellerhoff';">Gampang <span class="text-yellow-400">Rozaki</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative w-full bg-cover bg-center py-28 px-16" style="background-image: url('asset/bg4.png');">
+        <div class="max-w-3xl mx-auto text-center text-white">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="text-xl md:text-2xl font-semibold italic">"Kegagalan hanyalah kesempatan untuk memulai lagi dengan lebih cerdas."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="text-xl md:text-2xl font-semibold italic">"Kesuksesan dimulai dengan keberanian untuk mencoba."</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="text-xl md:text-2xl font-semibold italic">"Percayalah pada proses, kerja keras tidak akan mengkhianati hasil."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <section class="relative w-full bg-cover bg-center py-16 px-6">    
+        <div class="relative pt-10 pb-10 rounded-3xl text-white text-center mx-auto overflow-hidden">
+            <h1 class="text-center text-4xl fade-slide" style="font-family: 'Bakbak One';">Fasilitas</h1>
+            <p class="text-center font-sans text-2xl fade-slide" style="font-family: 'Didact Gothic';">Hal-hal kecil membuat kita menjadi yang terbaik </p>    
+            <hr class="w-28 mx-auto border-t-4 border-yellow-400 rounded-full fade-slide">
+
+            <div class="grid pt-4 grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-10" style="font-family: 'Didact Gothic'">
+                <div class="p-6 rounded-lg flex flex-col items-center text-center fade-slide hover:bg-yellow-400 hover:text-black">
+                    <img src="asset/6.png" alt="Icon 1" class="w-full h-auto mb-4">
+                    <h3 class="text-xl font-semibold">Meeting Room</h3>
+                    <p class="text-sm mt-2">Kami menyediakan tempat meeting untuk keperluan anda</p>
+                </div>
+    
+                <div class="p-6 rounded-lg flex flex-col items-center text-center fade-slide hover:bg-yellow-400 hover:text-black">
+                    <img src="asset/7.png" alt="Icon 2" class="w-full h-auto mb-4">
+                    <h3 class="text-xl font-semibold">Tempat Yang Nyaman</h3>
+                    <p class="text-sm mt-2">Menikmati kenyamanan dan sesejukan saat menjalankan aktivitas</p>
+                </div>
+    
+                <div class="p-6 rounded-lg flex flex-col items-center text-center fade-slide hover:bg-yellow-400 hover:text-black">
+                    <img src="asset/8.png" alt="Icon 3" class="w-full h-auto mb-4">
+                    <h3 class="text-xl font-semibold">Ruangan Ber-Ac</h3>
+                    <p class="text-sm mt-2">Nikmati sensasi menyegarkan saat berada di ruangan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-start md:text-left">
+    
+            <!-- Bagian Menu -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Menu</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">About</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Gallery</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Bagian Lokasi -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+                
+                <div class="flex items-center space-x-2">
+                    <img class="w-6 h-6" src="asset/18.png" alt="">
+                    <p class="text-sm pl-2">Jl. Merkurius, Venus, Bumi, Mars</p>
+                </div>
+            
+                <div class="flex items-center space-x-2 mt-2">
+                    <img class="w-6 h-6" src="asset/19.png" alt="">
+                    <p class="text-sm pl-2">landpage@gmail.com</p>
+                </div>
+            
+                <div class="flex items-center space-x-2 mt-2">
+                    <img class="w-6 h-6" src="asset/20.png" alt="">
+                    <p class="text-sm pl-2">+62 812-3456-7890</p>
+                </div>
+            </div>
+            
+    
+            <!-- Bagian Sosial Media -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="pr-0">
+                        <img class="w-8 h-8 mr-4" src="asset/fb.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="w-8 h-8 mr-4" src="asset/x.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="w-8 h-8 mr-4" src="asset/ig.png" alt="">
+                    </a> 
+                </div>
+            </div>
+        </div>
+    
+        <div class="border-t border-gray-700 mt-6 pt-4 text-center text-sm">
+            &copy; 2025 LandiPage. All rights reserved.
+        </div>
+    </footer>   
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script></body>
+</html>
