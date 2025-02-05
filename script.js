@@ -72,3 +72,32 @@ document.addEventListener("DOMContentLoaded", function () {
         effect: "slide",
     });
 });
+
+
+// KRitik dan Saran
+
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const responseMessage = document.getElementById("responseMessage");
+
+    if (name === "" || email === "" || message === "") {
+        responseMessage.textContent = "Harap isi semua kolom!";
+        responseMessage.classList.remove("hidden");
+        responseMessage.classList.add("text-red-500");
+        return;
+    }
+
+    // Simulasi pengiriman email menggunakan EmailJS (atau backend API)
+    // Gantilah ini dengan integrasi backend sebenarnya
+    setTimeout(() => {
+        responseMessage.textContent = "Terima kasih! Kritik dan saran Anda telah terkirim.";
+        responseMessage.classList.remove("hidden", "text-red-500");
+        responseMessage.classList.add("text-green-500");
+
+        document.getElementById("feedbackForm").reset();
+    }, 1500);
+});

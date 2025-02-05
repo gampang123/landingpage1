@@ -87,8 +87,8 @@
 
     <section class="text-white pt-8 pb-8 fade-slide">
         <h1 class="text-center text-4xl" style="font-family: 'Bakbak One';">ABOUT US</h1>
-        <p class="text-center font-sans text-2xl" style="font-family: 'Didact Gothic';">Sedikit tentang kami dan sejarah singkat awal mula kami.</p>
-        <hr class="w-28 mx-auto mt-2  border-t-4 border-yellow-400 rounded-full fade-slide">
+        <p class="text-center font-sans pb-2 text-2xl" style="font-family: 'Didact Gothic';">Sedikit tentang kami dan sejarah singkat awal mula kami.</p>
+        <hr class="w-28 mx-auto mt-2 border-t-4 border-yellow-400 rounded-full fade-slide">
 
         <div class="flex flex-col md:flex-row gap-8 px-4 md:px-10 items-center pt-6">
             <div class="w-full md:w-4/10 flex justify-center">
@@ -130,7 +130,7 @@
     <section class="relative w-full bg-cover bg-center py-16 px-6">    
         <div class="relative pt-10 pb-10 rounded-3xl text-white text-center mx-auto overflow-hidden">
             <h1 class="text-center text-4xl fade-slide" style="font-family: 'Bakbak One';">Fasilitas</h1>
-            <p class="text-center font-sans text-2xl fade-slide" style="font-family: 'Didact Gothic';">Hal-hal kecil membuat kita menjadi yang terbaik </p>    
+            <p class="text-center font-sans text-2xl fade-slide pb-2" style="font-family: 'Didact Gothic';">Hal-hal kecil membuat kita menjadi yang terbaik </p>    
             <hr class="w-28 mx-auto border-t-4 border-yellow-400 rounded-full fade-slide">
 
             <div class="grid pt-4 grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-10" style="font-family: 'Didact Gothic'">
@@ -154,6 +154,45 @@
             </div>
         </div>
     </section>
+
+    <section class="py-16 px-6 fade-slide" style="background-image: url(asset/bg5.png);">
+        <div class="max-w-3xl mx-auto rounded-lg p-8 text-white"> 
+            <h2 class="text-3xl font-semibold text-center text-white mb-6">Kritik & Saran</h2>
+            <p class="text-white text-center mb-8">
+                Kami sangat menghargai masukan Anda untuk meningkatkan layanan kami.
+            </p>
+            <hr class="w-28 mx-auto border-t-4 border-yellow-400 rounded-full">
+
+    
+            <form id="feedbackForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-white font-medium">Nama</label>
+                    <input type="text" id="name" name="name" required 
+                        class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none">
+                </div>
+    
+                <div>
+                    <label for="email" class="block text-white font-medium">Email</label>
+                    <input type="email" id="email" name="email" required 
+                        class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none">
+                </div>
+    
+                <div>
+                    <label for="message" class="block text-white font-medium">Pesan</label>
+                    <textarea id="message" name="message" rows="4" required 
+                        class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"></textarea>
+                </div>
+    
+                <button type="submit" 
+                    class="w-full bg-yellow-400 text-black font-semibold py-3 rounded-lg transition duration-300 hover:bg-yellow-500">
+                    Kirim
+                </button>
+            </form>
+    
+            <p id="responseMessage" class="text-center text-gray-600 mt-4 hidden"></p>
+        </div>
+    </section>
+    
     
     <footer class="bg-gray-900 text-white py-10">
         <div class="container mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-start md:text-left">
